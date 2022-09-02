@@ -1,3 +1,5 @@
+/** @format */
+
 h1,
 h2,
 h3,
@@ -5,23 +7,20 @@ h4,
 h5,
 h6,
 p {
-    margin: 0;
+  margin: 0;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 ul {
-    padding-inline-start: 0;
-    margin: 0;
+  padding-inline-start: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
+  text-decoration: none;
 }
