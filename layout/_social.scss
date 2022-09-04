@@ -1,0 +1,22 @@
+/** @format */
+
+.social {
+  padding-top: 20px;
+}
+
+.social__title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
+}

@@ -331,9 +331,6 @@ body {
 }
 
 .opening-hours__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-right: 10px;
   width: 20px;
   height: 20px;
@@ -350,4 +347,75 @@ body {
   gap: 15px;
   flex-direction: column;
   margin-left: 55px;
+}
+
+/** @format */
+.location {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.location__icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+/** @format */
+.contacts {
+  padding-top: 20px;
+}
+
+.contacts__title {
+  margin-bottom: 10px;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+}
+.contacts__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contacts__icon {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.contacts__text {
+  font-size: 18px;
+}
+
+/** @format */
+.info {
+  padding-top: 20px;
+}
+
+.info__title {
+  margin-bottom: 10px;
+}
+
+/** @format */
+.social {
+  padding-top: 20px;
+}
+
+.social__title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.social__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social__icon {
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */

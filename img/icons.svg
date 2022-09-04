@@ -12,5 +12,9 @@
 <symbol id="icon-user" viewBox="0 0 32 32">
 <path d="M18 22.082v-1.649c2.203-1.241 4-4.337 4-7.432 0-4.971 0-9-6-9s-6 4.029-6 9c0 3.096 1.797 6.191 4 7.432v1.649c-6.784 0.555-12 3.888-12 7.918h28c0-4.030-5.216-7.364-12-7.918z"></path>
 </symbol>
+<symbol id="icon-facebook" viewBox="0 0 32 32">
+<path fill="#1976d2" style="fill: var(--color1, #1976d2)" d="M28 0h-24c-2.206 0-4 1.794-4 4v24c0 2.206 1.794 4 4 4h24c2.206 0 4-1.794 4-4v-24c0-2.206-1.794-4-4-4z"></path>
+<path fill="#fafafa" style="fill: var(--color2, #fafafa)" d="M27 16h-5v-4c0-1.104 0.896-1 2-1h2v-5h-4c-3.314 0-6 2.686-6 6v0 4h-4v5h4v11h6v-11h3l2-5z"></path>
+</symbol>
 </defs>
 </svg>
