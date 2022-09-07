@@ -289,10 +289,11 @@ summary {
 
 /** @format */
 body {
-  font-family: Cormorant, serif;
+  font-family: Dosis, sans-serif;
   letter-spacing: 0.03em;
   color: #000;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 .title {
@@ -308,6 +309,10 @@ body {
 .page-header__title {
   text-align: center;
   margin: 28px 0;
+}
+
+.page-header__logo {
+  margin: 0 auto;
 }
 
 .page-header__text {
@@ -334,6 +339,10 @@ body {
   margin-right: 10px;
   width: 20px;
   height: 20px;
+}
+
+.opening-hour__title {
+  font-size: 1.2em;
 }
 
 .opening-hours__days-list {
@@ -385,6 +394,10 @@ body {
   height: 20px;
 }
 
+.contacts__link {
+  color: blueviolet;
+}
+
 .contacts__text {
   font-size: 18px;
 }
@@ -396,6 +409,10 @@ body {
 
 .info__title {
   margin-bottom: 10px;
+}
+
+.info__text {
+  text-align: center;
 }
 
 /** @format */
