@@ -304,6 +304,7 @@ body {
 .page-header {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .page-header__title {
