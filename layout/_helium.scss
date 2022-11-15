@@ -13,6 +13,23 @@
 // }
 
 .swiper {
-  width: 1200px;
-  height: 400px;
+  width: 100%;
+  height: 380px;
+  @include tablet {
+    width: 760px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+
+.swiper__img {
+  width: 100%;
+  height: 320px;
+  @include tablet {
+    width: 230px;
+  }
+  @include desktop {
+    width: 320px;
+  }
 }
