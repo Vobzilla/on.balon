@@ -1,6 +1,5 @@
 /** @format */
 .page-header {
-  outline: 1px solid tomato;
   padding: 20px 0;
 }
 .page-header .conteiner {
@@ -15,11 +14,12 @@
 }
 .topnav__item {
   padding: 10px;
-  background-color: rgb(145, 105, 180);
+  background-color: rgba(121, 32, 180, 0.4);
   border-radius: 7px;
 }
 .topnav__link {
-  color: rgb(250, 248, 245);
+  color: rgb(67, 5, 80);
+  font-weight: 500;
 }
 .auth-nav {
   display: flex;
@@ -28,10 +28,11 @@
 }
 .auth-nav__item {
   text-align: center;
-  background-color: rgb(145, 105, 180);
+  background-color: rgba(121, 32, 180, 0.4);
   padding: 4px;
   border-radius: 4px;
 }
 .auth-nav__link {
-  color: rgb(250, 248, 245);
+  color: rgb(67, 5, 80);
+  font-weight: 600;
 }
