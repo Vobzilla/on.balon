@@ -418,4 +418,38 @@ h2 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 35px;
+}
+
+/** @format */
+.figures {
+  padding-top: 100px;
+}
+
+.figures__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+/** @format */
+.bear {
+  padding-top: 100px;
+  padding-bottom: 250px;
+}
+
+.bear__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.bear__list-img {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.bear__text {
+  font-size: 18px;
 }/*# sourceMappingURL=main.css.map */
