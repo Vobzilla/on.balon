@@ -1,5 +1,6 @@
 /** @format */
 
+@import "./utils/vars";
 @import "./utils/reset";
 @import "./utils/modern-normalize";
 @import "./utils/mixin";
@@ -8,8 +9,10 @@
 @import "./sass/components/common";
 
 @import "./layout/header";
+@import "./layout/mob-menu";
 @import "./layout/hero";
 @import "./layout/helium";
 @import "./layout/decorations";
 @import "./layout/figures";
 @import "./layout/bear";
+@import "./layout/footer";

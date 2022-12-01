@@ -3,36 +3,62 @@
   padding: 20px 0;
 }
 .page-header .conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .top-nav {
   display: flex;
   gap: 10px;
+  margin-left: 50px;
 }
 .topnav__item {
   padding: 10px;
-  background-color: rgba(121, 32, 180, 0.4);
+  background-color: var(--primery-bg-color);
   border-radius: 7px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--btn-bg-color);
+  }
 }
 .topnav__link {
-  color: rgb(67, 5, 80);
+  color: var(--primery-text-color);
   font-weight: 500;
 }
 .auth-nav {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
   gap: 5px;
 }
 .auth-nav__item {
   text-align: center;
-  background-color: rgba(121, 32, 180, 0.4);
+  background-color: var(--primery-bg-color);
   padding: 4px;
   border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--btn-bg-color);
+  }
 }
 .auth-nav__link {
-  color: rgb(67, 5, 80);
+  color: var(--primery-text-color);
   font-weight: 600;
 }

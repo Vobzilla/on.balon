@@ -1,0 +1,15 @@
+/** @format */
+.footer {
+  padding: 80px 0;
+}
+
+.footer__wrap {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer__item {
+  color: var(--primery-text-color);
+  font-size: 18px;
+}
