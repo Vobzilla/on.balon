@@ -1,18 +1,22 @@
 /** @format */
-.helium {
-  padding-top: 100px;
-}
 .helium__title {
   text-align: center;
   margin-bottom: 30px;
   font-size: 35px;
 }
+
+.helium__title--first {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 25px;
+}
 .helium__list {
   display: flex;
   gap: 10px;
 }
-// .helium__item {
-// }
 
 .swiper {
   width: 100%;
