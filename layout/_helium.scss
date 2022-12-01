@@ -2,7 +2,9 @@
 .helium__title {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 35px;
+  @include tablet {
+    font-size: 35px;
+  }
 }
 
 .helium__title--first {
@@ -10,8 +12,13 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  gap: 10px;
-  font-size: 25px;
+  font-size: 15px;
+  margin-bottom: 50px;
+
+  @include tablet {
+    gap: 10px;
+    font-size: 25px;
+  }
 }
 .helium__list {
   display: flex;

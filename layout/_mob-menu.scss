@@ -98,3 +98,9 @@
   height: 460px;
   transform: translate(-60%, -30%);
 }
+
+.nav__social {
+  display: flex;
+  gap: 4px;
+  justify-content: flex-end;
+}

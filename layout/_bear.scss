@@ -2,6 +2,7 @@
 
 .bear {
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 .bear__title {
   text-align: center;
@@ -17,7 +18,10 @@
 }
 
 .bear__text {
-  font-size: 18px;
+  font-size: 16px;
+  @include tablet {
+    font-size: 18px;
+  }
 }
 
 .bear__img {
