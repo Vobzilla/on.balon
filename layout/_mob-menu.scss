@@ -103,4 +103,8 @@
   display: flex;
   gap: 4px;
   justify-content: flex-end;
+
+  @include tablet {
+    display: none;
+  }
 }

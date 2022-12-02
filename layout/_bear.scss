@@ -26,4 +26,8 @@
 
 .bear__img {
   border-radius: 10px;
+
+  @include desktop {
+    width: 450px;
+  }
 }

@@ -496,6 +496,11 @@ h2 {
   gap: 4px;
   justify-content: flex-end;
 }
+@media screen and (min-width: 768px) {
+  .nav__social {
+    display: none;
+  }
+}
 
 /** @format */
 .hero {
@@ -631,16 +636,16 @@ h2 {
 .bear__img {
   border-radius: 10px;
 }
+@media screen and (min-width: 1200px) {
+  .bear__img {
+    width: 450px;
+  }
+}
 
 /** @format */
 .footer {
   padding: 10px 0;
   border-top: solid 2px rgb(197, 139, 241);
-}
-@media screen and (min-width: 768px) {
-  .footer {
-    padding: 80px 0;
-  }
 }
 
 .footer__wrap {
