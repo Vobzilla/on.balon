@@ -620,8 +620,13 @@ h2 {
 .bear__list-img {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 10px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .bear__list-img {
+    gap: 25px;
+  }
 }
 
 .bear__text {
@@ -635,6 +640,7 @@ h2 {
 
 .bear__img {
   border-radius: 10px;
+  width: 320px;
 }
 @media screen and (min-width: 1200px) {
   .bear__img {

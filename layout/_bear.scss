@@ -13,8 +13,11 @@
 .bear__list-img {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 10px;
   margin-bottom: 20px;
+  @include desktop {
+    gap: 25px;
+  }
 }
 
 .bear__text {
@@ -26,6 +29,7 @@
 
 .bear__img {
   border-radius: 10px;
+  width: 320px;
 
   @include desktop {
     width: 450px;
