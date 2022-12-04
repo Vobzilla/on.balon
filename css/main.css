@@ -386,6 +386,8 @@ h2 {
 }
 
 .auth-nav__link {
+  display: flex;
+  gap: 6px;
   color: var(--primery-text-color);
   font-weight: 600;
 }
@@ -493,7 +495,7 @@ h2 {
 
 .nav__social {
   display: flex;
-  gap: 4px;
+  gap: 6px;
   justify-content: flex-end;
   padding-right: 10px;
 }
@@ -526,6 +528,11 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.car-js {
+  --animate-delay: 3s;
+  --animate-duration: 5s;
 }
 
 .helium__title {
@@ -678,6 +685,7 @@ h2 {
   display: flex;
   text-align: center;
   font-size: 15px;
+  font-weight: 600;
   padding: 5px;
   color: var(--primery-text-color);
 }/*# sourceMappingURL=main.css.map */

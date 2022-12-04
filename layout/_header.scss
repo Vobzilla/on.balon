@@ -38,6 +38,7 @@
   color: var(--primery-text-color);
   font-weight: 500;
 }
+
 .auth-nav {
   display: flex;
   flex-direction: column;
@@ -59,6 +60,8 @@
   }
 }
 .auth-nav__link {
+  display: flex;
+  gap: 6px;
   color: var(--primery-text-color);
   font-weight: 600;
 }
