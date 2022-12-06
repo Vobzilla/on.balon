@@ -1,5 +1,9 @@
 /** @format */
 const swiper = new Swiper(".swiper", {
+  // Disable preloading of all images
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: true,
   // Optional parameters
   direction: "horizontal",
   loop: true,
