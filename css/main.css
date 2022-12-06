@@ -651,6 +651,12 @@ h2 {
   }
 }
 
+.bear__list-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .bear__text {
   font-size: 16px;
 }
