@@ -21,7 +21,7 @@
 
   @include tablet {
     margin-left: 20px;
-    gap: 6px;
+    gap: 4px;
   }
 
   @include desktop {
@@ -55,27 +55,6 @@
 
 .auth-nav {
   display: flex;
-  flex-direction: column;
   margin-left: auto;
-  gap: 5px;
-}
-.auth-nav__item {
-  text-align: center;
-  background-color: var(--primery-bg-color);
-  padding: 4px;
-  border-radius: 4px;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover {
-    background-color: var(--btn-bg-color);
-  }
-}
-.auth-nav__link {
-  display: flex;
-  gap: 6px;
-  color: var(--primery-text-color);
-  font-weight: 600;
+  gap: 10px;
 }

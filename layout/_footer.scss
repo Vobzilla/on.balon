@@ -17,8 +17,21 @@
 .footer__item {
   display: flex;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   padding: 5px;
   color: var(--primery-text-color);
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primery-text-color);
+  font-weight: 600;
 }

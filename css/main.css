@@ -348,7 +348,7 @@ body {
 @media screen and (min-width: 768px) {
   .top-nav {
     margin-left: 20px;
-    gap: 6px;
+    gap: 4px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -386,29 +386,8 @@ body {
 
 .auth-nav {
   display: flex;
-  flex-direction: column;
   margin-left: auto;
-  gap: 5px;
-}
-
-.auth-nav__item {
-  text-align: center;
-  background-color: var(--primery-bg-color);
-  padding: 4px;
-  border-radius: 4px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.auth-nav__item:hover {
-  background-color: var(--btn-bg-color);
-}
-
-.auth-nav__link {
-  display: flex;
-  gap: 6px;
-  color: var(--primery-text-color);
-  font-weight: 600;
+  gap: 10px;
 }
 
 /** @format */
@@ -530,10 +509,10 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../img/hero.png), linear-gradient(to top, rgba(148, 56, 209, 0.4), rgba(228, 190, 236, 0.4));
+  background-image: url(../img/hero.png), linear-gradient(to bottom, rgba(148, 56, 209, 0.2), rgba(228, 190, 236, 0.1));
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background-size: 350px, cover;
+  background-position: center, center;
   height: 400px;
   width: 100%;
 }
@@ -558,6 +537,7 @@ body {
 .helium__title {
   text-align: center;
   margin-bottom: 30px;
+  font-size: 35px;
 }
 @media screen and (min-width: 768px) {
   .helium__title {
@@ -570,7 +550,7 @@ body {
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-size: 15px;
+  font-size: 25px;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -698,10 +678,23 @@ body {
 .footer__item {
   display: flex;
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   padding: 5px;
   color: var(--primery-text-color);
+}
+
+.footer__social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primery-text-color);
+  font-weight: 600;
 }
 
 /** @format */
