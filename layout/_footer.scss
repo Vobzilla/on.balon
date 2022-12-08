@@ -25,7 +25,15 @@
 
 .footer__social {
   display: flex;
-  gap: 10px;
+  gap: 16px;
+}
+.footer__social-item {
+  transition-property: transform;
+
+  &:hover {
+    transform: scale(1.2);
+    transition-duration: 250ms;
+  }
 }
 
 .footer__social-link {

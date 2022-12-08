@@ -1,41 +1,69 @@
 /** @format */
 .page-header {
-  padding: 20px 0;
+  background-image: url(../img/baloonpaint.png);
+  background-position: center;
+  background-size: cover;
 }
+
 .page-header .conteiner {
   display: none;
 
   @include tablet {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
   }
 
   @include desktop {
     display: flex;
-    align-items: center;
   }
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
 }
 
 .top-nav {
   display: flex;
 
   @include tablet {
-    margin-left: 20px;
     gap: 4px;
+
+    & :hover {
+      transform: scale(1.2);
+    }
   }
 
   @include desktop {
-    gap: 10px;
-    margin-left: 50px;
+    gap: 20px;
+
+    & :hover {
+      transform: scale(1.2);
+      transition-duration: 250ms;
+    }
   }
 }
 .topnav__item {
-  background-color: var(--primery-bg-color);
-  border-radius: 7px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  transition-property: transform;
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include tablet {
+    padding: 5px;
+  }
+  @include desktop {
+    padding: 15px;
+  }
+}
+.topnav__link {
+  color: var(--primery-text-color);
+  font-weight: 500;
 
   @include tablet {
     padding: 5px;
@@ -43,18 +71,33 @@
   @include desktop {
     padding: 10px;
   }
-
-  &:hover {
-    background-color: var(--btn-bg-color);
-  }
-}
-.topnav__link {
-  color: var(--primery-text-color);
-  font-weight: 500;
 }
 
 .auth-nav {
   display: flex;
-  margin-left: auto;
   gap: 10px;
+}
+
+.auth-nav__item {
+  transition-property: transform;
+
+  & :hover {
+    transform: scale(1.2);
+    transition-duration: 250ms;
+  }
+}
+
+.auth-nav__link--tell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primery-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  transition-property: transform;
+
+  & :hover {
+    transform: scale(1.2);
+    transition-duration: 250ms;
+  }
 }

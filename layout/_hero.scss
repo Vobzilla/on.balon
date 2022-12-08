@@ -4,16 +4,9 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
-  background-image: url(../img/hero.png),
-    linear-gradient(
-      to bottom,
-      rgba(148, 56, 209, 0.2),
-      rgba(228, 190, 236, 0.1)
-    );
-  background-repeat: no-repeat;
-  background-size: 350px, cover;
-  background-position: center, center;
+  background-image: url(../img/baloonpaint.png);
+  background-position: center;
+  background-size: cover;
   height: 400px;
   width: 100%;
 }

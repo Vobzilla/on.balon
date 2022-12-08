@@ -25,3 +25,20 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.swiper {
+  width: 100%;
+  height: 320px;
+  @include tablet {
+    width: 760px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+
+.swiper__img {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}

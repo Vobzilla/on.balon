@@ -2,7 +2,6 @@
 :root {
   --primery-bg-color: rgba(121, 32, 180, 0.4);
   --primery-text-color: rgb(67, 5, 80);
-  --btn-bg-color: rgb(205, 34, 231);
 }
 
 /** @format */
@@ -321,9 +320,32 @@ body {
   margin: -1px;
 }
 
+.swiper {
+  width: 100%;
+  height: 320px;
+}
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 760px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper {
+    width: 1200px;
+  }
+}
+
+.swiper__img {
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+}
+
 /** @format */
 .page-header {
-  padding: 20px 0;
+  background-image: url(../img/baloonpaint.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .page-header .conteiner {
@@ -332,14 +354,23 @@ body {
 @media screen and (min-width: 768px) {
   .page-header .conteiner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    flex-direction: column;
   }
 }
 @media screen and (min-width: 1200px) {
   .page-header .conteiner {
     display: flex;
-    align-items: center;
   }
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
 }
 
 .top-nav {
@@ -347,23 +378,27 @@ body {
 }
 @media screen and (min-width: 768px) {
   .top-nav {
-    margin-left: 20px;
     gap: 4px;
+  }
+  .top-nav :hover {
+    transform: scale(1.2);
   }
 }
 @media screen and (min-width: 1200px) {
   .top-nav {
-    gap: 10px;
-    margin-left: 50px;
+    gap: 20px;
+  }
+  .top-nav :hover {
+    transform: scale(1.2);
+    transition-duration: 250ms;
   }
 }
 
 .topnav__item {
-  background-color: var(--primery-bg-color);
-  border-radius: 7px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  transition-property: transform;
 }
 @media screen and (min-width: 768px) {
   .topnav__item {
@@ -372,22 +407,50 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .topnav__item {
-    padding: 10px;
+    padding: 15px;
   }
-}
-.topnav__item:hover {
-  background-color: var(--btn-bg-color);
 }
 
 .topnav__link {
   color: var(--primery-text-color);
   font-weight: 500;
 }
+@media screen and (min-width: 768px) {
+  .topnav__link {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .topnav__link {
+    padding: 10px;
+  }
+}
 
 .auth-nav {
   display: flex;
-  margin-left: auto;
   gap: 10px;
+}
+
+.auth-nav__item {
+  transition-property: transform;
+}
+.auth-nav__item :hover {
+  transform: scale(1.2);
+  transition-duration: 250ms;
+}
+
+.auth-nav__link--tell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--primery-text-color);
+  font-size: 18px;
+  font-weight: 500;
+  transition-property: transform;
+}
+.auth-nav__link--tell :hover {
+  transform: scale(1.2);
+  transition-duration: 250ms;
 }
 
 /** @format */
@@ -496,6 +559,7 @@ body {
   gap: 6px;
   justify-content: flex-end;
   padding-right: 10px;
+  padding-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .nav__social {
@@ -509,10 +573,9 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../img/hero.png), linear-gradient(to bottom, rgba(148, 56, 209, 0.2), rgba(228, 190, 236, 0.1));
-  background-repeat: no-repeat;
-  background-size: 350px, cover;
-  background-position: center, center;
+  background-image: url(../img/baloonpaint.png);
+  background-position: center;
+  background-size: cover;
   height: 400px;
   width: 100%;
 }
@@ -563,27 +626,6 @@ body {
 .helium__list {
   display: flex;
   gap: 10px;
-}
-
-.swiper {
-  width: 100%;
-  height: 320px;
-}
-@media screen and (min-width: 768px) {
-  .swiper {
-    width: 760px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .swiper {
-    width: 1200px;
-  }
-}
-
-.swiper__img {
-  position: absolute;
-  width: 100%;
-  border-radius: 10px;
 }
 
 /** @format */
@@ -686,7 +728,15 @@ body {
 
 .footer__social {
   display: flex;
-  gap: 10px;
+  gap: 16px;
+}
+
+.footer__social-item {
+  transition-property: transform;
+}
+.footer__social-item:hover {
+  transform: scale(1.2);
+  transition-duration: 250ms;
 }
 
 .footer__social-link {
