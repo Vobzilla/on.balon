@@ -301,6 +301,10 @@ body {
   font-weight: 400;
   font-size: 15px;
   background-color: rgba(180, 103, 235, 0.3);
+  background-image: url(../img/baloonpaint.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
 }
 
 .title {
@@ -342,12 +346,6 @@ body {
 }
 
 /** @format */
-.page-header {
-  background-image: url(../img/baloonpaint.png);
-  background-position: center;
-  background-size: cover;
-}
-
 .page-header .conteiner {
   display: none;
 }
@@ -573,9 +571,6 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  background-image: url(../img/baloonpaint.png);
-  background-position: center;
-  background-size: cover;
   height: 400px;
   width: 100%;
 }
