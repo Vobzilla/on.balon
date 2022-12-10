@@ -304,7 +304,6 @@ body {
   background-image: url(../img/baloonpaint.png);
   background-position: center;
   background-size: contain;
-  background-repeat: repeat;
 }
 
 .title {
@@ -437,6 +436,14 @@ body {
   transition-duration: 250ms;
 }
 
+.auth-nav__wrap--tell {
+  transition-property: transform;
+}
+.auth-nav__wrap--tell :hover {
+  transform: scale(1.2);
+  transition-duration: 250ms;
+}
+
 .auth-nav__link--tell {
   display: flex;
   align-items: center;
@@ -444,11 +451,6 @@ body {
   color: var(--primery-text-color);
   font-size: 18px;
   font-weight: 500;
-  transition-property: transform;
-}
-.auth-nav__link--tell :hover {
-  transform: scale(1.2);
-  transition-duration: 250ms;
 }
 
 /** @format */

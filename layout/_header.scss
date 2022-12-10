@@ -82,6 +82,14 @@
   }
 }
 
+.auth-nav__wrap--tell {
+  transition-property: transform;
+  & :hover {
+    transform: scale(1.2);
+    transition-duration: 250ms;
+  }
+}
+
 .auth-nav__link--tell {
   display: flex;
   align-items: center;
@@ -89,10 +97,4 @@
   color: var(--primery-text-color);
   font-size: 18px;
   font-weight: 500;
-  transition-property: transform;
-
-  & :hover {
-    transform: scale(1.2);
-    transition-duration: 250ms;
-  }
 }
