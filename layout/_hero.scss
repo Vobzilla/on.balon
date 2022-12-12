@@ -1,12 +1,18 @@
 /** @format */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  height: 400px;
-  width: 100%;
+  padding-top: 50px;
+  height: 450px;
+
+  background-image: url(../img/bear-icon.png);
+  background-size: contain;
+  background-position: center;
 }
 .hero__title {
   text-align: center;
+}
+
+.hero__img {
+  width: 1200px;
+  height: 600px;
+  border-radius: 10px;
 }
