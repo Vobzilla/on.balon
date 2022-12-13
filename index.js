@@ -8,7 +8,6 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 10,
   setWrapperSize: true,
 
   // Navigation arrows
@@ -24,12 +23,12 @@ const swiper = new Swiper(".swiper", {
   breakpoints: {
     // when window width is >= 480px
     768: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     // when window width is >= 640px
     1050: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },
