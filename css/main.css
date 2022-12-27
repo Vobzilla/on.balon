@@ -306,6 +306,10 @@ body {
   background-size: contain;
 }
 
+.body-price {
+  background-size: cover;
+}
+
 .title {
   color: var(--primery-text-color);
 }
