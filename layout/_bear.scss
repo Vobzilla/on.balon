@@ -13,10 +13,12 @@
 .bear__list-img {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
-  @include desktop {
+  @include tablet {
     gap: 25px;
+    flex-direction: row;
   }
 }
 
@@ -37,7 +39,12 @@
   border-radius: 10px;
   width: 320px;
 
+  @include tablet {
+    max-height: 320px;
+  }
+
   @include desktop {
     width: 450px;
+    max-height: 520px;
   }
 }
