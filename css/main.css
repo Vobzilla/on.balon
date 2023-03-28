@@ -588,14 +588,6 @@ body {
 }
 
 /** @format */
-.hero {
-  padding-top: 50px;
-  height: 450px;
-  background-image: url(../img/bear-icon.png);
-  background-size: contain;
-  background-position: center;
-}
-
 .hero__title {
   text-align: center;
 }
@@ -681,12 +673,14 @@ body {
 .bear__list-img {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .bear__list-img {
     gap: 25px;
+    flex-direction: row;
   }
 }
 
@@ -709,9 +703,15 @@ body {
   border-radius: 10px;
   width: 320px;
 }
+@media screen and (min-width: 768px) {
+  .bear__img {
+    max-height: 320px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .bear__img {
     width: 450px;
+    max-height: 520px;
   }
 }
 
