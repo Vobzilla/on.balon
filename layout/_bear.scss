@@ -26,6 +26,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  padding: 10px;
+
+  outline: 2px solid rgb(197, 139, 241);
+  border-radius: 10px;
 }
 
 .bear__text {
