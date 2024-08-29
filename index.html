@@ -21,10 +21,10 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 </head>
 
 <body>
@@ -47,36 +47,16 @@
             </div>
 
             <ul class="top-nav">
-                <li class="topnav__item"><a href="#helium" class="topnav__link">Balony z helem</a></li>
-                <li class="topnav__item"><a href="#decorations" class="topnav__link">Dekoracje balonowe</a></li>
-                <li class="topnav__item"><a href="#figures" class="topnav__link">Figury z balonów</a></li>
-                <li class="topnav__item"><a href="#bear" class="topnav__link">Biały Miś</a></li>
+                <li class="topnav__item"><a href="index.html" class="topnav__link">Home</a></li>
                 <li class="topnav__item"><a href="price.html" class="topnav__link">Cennik</a></li>
             </ul>
+        </div>
 
 
 
         </div>
 
         <!-- Mob menu -->
-        <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </div>
-            <nav class="nav" id="nav">
-                <ul>
-                    <li><a href="index.html">Balony z helem</a></li>
-                    <li><a href="#decorations">Dekoracje balonowe</a></li>
-                    <li><a href="#figures">Figury z balonów</a></li>
-                    <li><a href="#bear">Biały Miś</a></li>
-                    <li><a href="price.html" class="topnav__link">Cennik</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="menu-bg" id="menu-bg"></div>
 
         <div class="nav__social">
             <a href="https://t.me/onbalon"><img src="./img/social/icon_telegram.png" alt="telegram" width="30"></a>
@@ -102,120 +82,34 @@
     </div>
 
     <section class="helium conteiner">
-        <h2 class="helium__title title" id="#helium">Balony z helem</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/1.jpg" alt="osiem" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/2.jpg" alt="24" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/3.jpg" alt="paw-patrul" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/4.jpg" alt="paw-sky" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/5.jpg" alt="baby"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/6.jpg" alt="zestaw-hel-22"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/7.jpg" alt="zestaw-hel-1"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/8.jpg" alt="zestaw-hel-1"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/9.jpg" alt="boy-or-girl"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/10.jpg"
-                        alt="zestaw-hel-30" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/11.jpg" alt="zestaw-hel-2"
-                        height="360">
-                </div>
+        <h2 class="helium__title title">Balony z helem</h2>
+        <div class="gallery">
+            <div class="gallery-container">
+                <a href="./img/hel/1.jpg" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/1.jpg" alt="Birthday Photo 1">
+                </a>
+                <a href="./img/hel/2.jpg" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/2.jpg" alt="Birthday Photo 2">
+                </a>
+                <a href="./img/hel/3.jpg" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/3.jpg" alt="Birthday Photo 3">
+                </a>
+                <a href="./img/hel/4.jpg" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/4.jpg" alt="Birthday Photo 4">
+                </a>
+                <a href="./img/hel/5.jpg" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/5.jpg" alt="Birthday Photo 5">
+                </a>
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <a href="helium-gallery.html" class="view-all">zobaczyc więcej</a>
         </div>
     </section>
 
-    <section class="decorations conteiner">
-        <h2 class="decorations__title title" id="decorations">Dekoracje balonowe</h2>
-
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/1.jpg" alt="HappyBirthday50"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/2.jpg" alt="HappyBirthdayKing"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/3.jpg" alt="chrzestSW" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/4.jpg" alt="HappyBirthday"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/deko/5.jpg"
-                        alt="HappyBirthdayMia" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/deko/6.jpg"
-                        alt="HappyBirthdayDaniel" height="360">
-                </div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-    </section>
-
-    <section class="figures conteiner">
-
-        <h2 class="figures__title title" id="figures">Figury z balonów</h2>
-
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/1.jpg" alt="paw-sky" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/2.jpg" alt="renifer" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/3.jpg" alt="królik" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/4.jpg" alt="teddy" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/5.jpg" alt="mikki"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/6.jpg" alt="peppa"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/7.jpg" alt="bałwan"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/8.jpg" alt="kwiaty"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/9.jpg" alt="jojo"
-                        height="360">
-                </div>
-
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button--color"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </section>
 
     <section class="bear conteiner">
         <h2 class="bear__title title" id="bear">Biały Miś na Twoją uroczystość</h2>
@@ -284,10 +178,10 @@
 
     </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
-    <script src="./menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

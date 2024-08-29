@@ -2,6 +2,7 @@
 :root {
   --primery-bg-color: rgba(121, 32, 180, 0.4);
   --primery-text-color: rgb(67, 5, 80);
+  --outline-color: #c58bf1;
 }
 
 /** @format */
@@ -464,39 +465,6 @@ body {
 }
 
 /** @format */
-#menu {
-  z-index: 2;
-}
-@media screen and (min-width: 768px) {
-  #menu {
-    display: none;
-  }
-}
-
-#menu-bar {
-  width: 45px;
-  height: 40px;
-  margin: 30px 0 20px 20px;
-  cursor: pointer;
-}
-
-.bar {
-  height: 5px;
-  width: 100%;
-  background-color: rgba(84, 3, 100, 0.8156862745);
-  display: block;
-  border-radius: 5px;
-  transition: 0.3s ease;
-}
-
-#bar1 {
-  transform: translateY(-4px);
-}
-
-#bar3 {
-  transform: translateY(4px);
-}
-
 .nav {
   transition: 0.3s ease;
   display: none;
@@ -519,43 +487,6 @@ body {
 
 .nav li a:hover {
   font-weight: bold;
-}
-
-.menu-bg,
-#menu {
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
-.menu-bg {
-  z-index: 1;
-  width: 0;
-  height: 0;
-  margin: 30px 0 20px 20px;
-  background: radial-gradient(circle, rgba(84, 3, 100, 0.8156862745), rgba(84, 3, 100, 0.8156862745));
-  border-radius: 50%;
-  transition: 0.3s ease;
-}
-
-.change {
-  display: block;
-}
-
-.change .bar {
-  background-color: white;
-}
-
-.change #bar1 {
-  transform: translateY(4px) rotateZ(-45deg);
-}
-
-.change #bar2 {
-  opacity: 0;
-}
-
-.change #bar3 {
-  transform: translateY(-6px) rotateZ(45deg);
 }
 
 .change-bg {
@@ -689,7 +620,7 @@ body {
   flex-wrap: wrap;
   gap: 12px;
   padding: 10px;
-  outline: 2px solid rgb(197, 139, 241);
+  outline: 2px solid var(--outline-color);
   border-radius: 10px;
 }
 
@@ -794,4 +725,52 @@ body {
 
 .price__text {
   font-size: 16px;
+}
+
+/** @format */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.view-all {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid var(--outline-color);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-all:hover {
+  background-color: var(--primery-text-color);
+  color: white;
 }/*# sourceMappingURL=main.css.map */
