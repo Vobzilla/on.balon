@@ -379,6 +379,7 @@ body {
   justify-content: center;
   width: 100%;
   gap: 60px;
+  margin-top: 10px;
 }
 
 .top-nav {
@@ -407,6 +408,7 @@ body {
   font-weight: 700;
   font-size: 18px;
   transition-property: transform;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .topnav__item {
@@ -465,36 +467,6 @@ body {
 }
 
 /** @format */
-.nav {
-  transition: 0.3s ease;
-  display: none;
-}
-
-.nav ul {
-  padding: 0 22px;
-}
-
-.nav li {
-  list-style: none;
-  padding: 12px 0;
-}
-
-.nav li a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  font-weight: bold;
-}
-
-.change-bg {
-  width: 520px;
-  height: 460px;
-  transform: translate(-60%, -30%);
-}
-
 .nav__social {
   display: flex;
   gap: 6px;
@@ -511,11 +483,35 @@ body {
 .logo--mob {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
 @media screen and (min-width: 768px) {
   .logo--mob {
     display: none;
   }
+}
+
+.nav__mob {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .nav__mob {
+    display: none;
+  }
+}
+
+.car__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.car-js {
+  --animate-delay: 3s;
+  --animate-duration: 5s;
 }
 
 /** @format */
@@ -524,18 +520,6 @@ body {
 }
 
 /** @format */
-.car__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.car-js {
-  --animate-delay: 3s;
-  --animate-duration: 5s;
-}
-
 .helium__title {
   text-align: center;
   margin-bottom: 30px;
@@ -635,7 +619,9 @@ body {
 
 .bear__img {
   border-radius: 10px;
-  width: 320px;
+  width: 300px;
+  max-height: 360px;
+  object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .bear__img {
@@ -644,8 +630,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .bear__img {
-    width: 450px;
-    max-height: 520px;
+    width: 337, 5px;
+    max-height: 390px;
   }
 }
 
@@ -699,7 +685,7 @@ body {
 
 /** @format */
 .price {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -759,6 +745,7 @@ body {
 
 .view-all {
   display: block;
+  max-width: 440px;
   margin: 20px auto;
   text-align: center;
   color: #333;

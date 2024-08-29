@@ -1,33 +1,4 @@
 /** @format */
-.nav {
-  transition: 0.3s ease;
-  display: none;
-}
-
-.nav ul {
-  padding: 0 22px;
-}
-
-.nav li {
-  list-style: none;
-  padding: 12px 0;
-}
-
-.nav li a {
-  color: white;
-  font-size: 20px;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  font-weight: bold;
-}
-
-.change-bg {
-  width: 520px;
-  height: 460px;
-  transform: translate(-60%, -30%);
-}
 
 .nav__social {
   display: flex;
@@ -44,8 +15,30 @@
 .logo--mob {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 
   @include tablet {
     display: none;
   }
+}
+
+.nav__mob {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  @include tablet {
+    display: none;
+  }
+}
+
+.car__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.car-js {
+  --animate-delay: 3s;
+  --animate-duration: 5s;
 }

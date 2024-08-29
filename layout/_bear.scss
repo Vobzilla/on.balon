@@ -41,14 +41,16 @@
 
 .bear__img {
   border-radius: 10px;
-  width: 320px;
+  width: 300px;
+  max-height: 360px;
+  object-fit: cover;
 
   @include tablet {
     max-height: 320px;
   }
 
   @include desktop {
-    width: 450px;
-    max-height: 520px;
+    width: 337, 5px;
+    max-height: 390px;
   }
 }
