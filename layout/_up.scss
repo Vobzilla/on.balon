@@ -1,0 +1,26 @@
+/** @format */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: none; /* Спочатку невидима */
+}
+
+/* Стилізація зображення іконки всередині кнопки */
+.balloon-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* Ефект при наведенні */
+.scroll-to-top:hover .balloon-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}

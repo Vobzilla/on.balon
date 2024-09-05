@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** @format */ /** @format */
 :root {
   --primery-bg-color: rgba(121, 32, 180, 0.4);
@@ -522,7 +523,8 @@ body {
 /** @format */
 .helium__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
   font-size: 35px;
 }
 @media screen and (min-width: 768px) {
@@ -717,11 +719,18 @@ body {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
+  justify-items: center;
+  gap: 40px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-container {
+    gap: 50px;
+  }
 }
 
 .gallery-item {
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -730,7 +739,7 @@ body {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -760,4 +769,30 @@ body {
 .view-all:hover {
   background-color: var(--primery-text-color);
   color: white;
+}
+
+/** @format */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 5px;
+  z-index: 99;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  display: none; /* Спочатку невидима */
+}
+
+/* Стилізація зображення іконки всередині кнопки */
+.balloon-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* Ефект при наведенні */
+.scroll-to-top:hover .balloon-icon {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }/*# sourceMappingURL=main.css.map */
