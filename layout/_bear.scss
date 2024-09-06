@@ -21,7 +21,11 @@
     flex-direction: row;
   }
 }
-
+.bear__list-item {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--outline-color);
+}
 .bear__list-text {
   display: flex;
   flex-wrap: wrap;

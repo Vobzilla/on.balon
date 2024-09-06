@@ -69,13 +69,18 @@
         <div class="logo--mob"><a href="index.html" class="logo-link--mob"><img class="page-header__logo--mob"
                     src="./img/logo.png" alt="logo" width="200"></a></div>
 
-        <div class="nav__mob">
+        <!-- Бургер-іконка -->
+        <button class="burger-icon" id="burger-icon" aria-label="Toggle menu">
+            <img src="./img/burger-icon.svg" alt="Open Menu" id="burger-icon-img">
+        </button>
+        <div class="nav__mob" id="nav-mob">
             <ul class="nav__mob-list">
-                <li class="topnav__item"><a href="index.html" class="topnav__link">Home</a></li>
-                <li class="topnav__item"><a href="helium-gallery.html" class="topnav__link">Balony z helem</a></li>
-                <li class="topnav__item"><a href="dekoracje.html" class="topnav__link">Dekoracje balonowe</a></li>
-
+                <li class="topnav__item"><a href="helium-gallery.html" class="topnav__link-mob">Balony z helem</a></li>
+                <li class="topnav__item"><a href="dekoracje.html" class="topnav__link-mob">Dekoracje balonowe</a></li>
+                <li class="topnav__item"><a href="price.html" class="topnav__link-mob">Cennik</a></li>
+                <li class="topnav__item"><a href="about.html" class="topnav__link-mob">O nas</a></li>
             </ul>
+        </div>
     </header>
 
 
@@ -102,16 +107,17 @@
                 dorośli, jak i najmłodsi. Oferujemy również dostawę balonów prosto pod Twoje drzwi, gwarantując, że
                 każde
                 zamówienie zostanie zrealizowane z najwyższą starannością.
-                Nasz zespół posiada ponad cztery lata doświadczenia w branży balonowej, co pozwala nam oferować produkty
-                i usługi
-                najwyższej jakości.</p>
+            </p>
             <img src="./img/team/team-2.webp" alt="Dekoracje z balonów" class="image-section">
         </div>
 
         <h2>Dlaczego my?</h2>
         <p>Przez rok działalności zdobyliśmy grono stałych klientów i mnóstwo pozytywnych opinii, co motywuje nas do
             ciągłego
-            rozwijania i podnoszenia jakości naszych usług.</p>
+            rozwijania i podnoszenia jakości naszych usług.
+            Nasz zespół posiada ponad cztery lata doświadczenia w branży balonowej, co pozwala nam oferować produkty
+            i usługi
+            najwyższej jakości.</p>
 
         <h2>Zapraszamy do świata On.balon</h2>
         <p>Gdzie każde święto staje się niezapomniane dzięki magicznemu dotykowi naszych balonów!</p>
@@ -154,7 +160,7 @@
     </footer>
 
     <button id="scrollToTopBtn" title="Do góry" class="scroll-to-top">
-        <img src="./img/up.png" alt="Icon of balloon" class="balloon-icon">
+        <img src="./img/up.svg" alt="Icon of balloon" class="balloon-icon">
     </button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

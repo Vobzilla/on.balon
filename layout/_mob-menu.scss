@@ -1,4 +1,8 @@
-/** @format */
+/**
+ * Соціальні іконки
+ *
+ * @format
+ */
 
 .nav__social {
   display: flex;
@@ -8,25 +12,77 @@
   padding-right: 10px;
 
   @include tablet {
-    display: none;
+    display: none; /* Приховуємо соціальні іконки на планшетах */
   }
 }
 
+.topnav__link-mob {
+  color: white;
+  font-weight: 600;
+}
+
+/* Логотип для мобільної версії */
 .logo--mob {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 
   @include tablet {
-    display: none;
+    display: none; /* Логотип приховується на планшетах */
   }
 }
 
+.page-header__logo--mob {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/* Мобільне меню */
+/* Мобільне меню з напівпрозорим фіолетовим фоном */
 .nav__mob {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 80%;
+  padding: 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  background-color: rgba(65, 26, 73, 0.9);
+  z-index: 999;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--outline-color);
+  transition: opacity 0.5s ease, max-height 0.5s ease;
   @include tablet {
-    display: none;
+    display: none; /* Приховано на планшетах */
   }
+}
+
+/* Показати меню, коли активне */
+.nav__mob--active {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Бургер-іконка */
+.burger-icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px; /* Відступ зверху */
+  left: 20px; /* Відступ справа */
+  z-index: 1001; /* Вищий індекс, щоб бути поверх меню */
+
+  @include tablet {
+    display: none; /* Приховуємо на планшетах і більших екранах */
+  }
+}
+
+/* Анімація бургер-іконки */
+.burger-icon img {
+  width: 30px;
+  height: 30px;
 }

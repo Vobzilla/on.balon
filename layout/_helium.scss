@@ -16,6 +16,7 @@
   text-align: center;
   justify-content: center;
   font-size: 25px;
+  margin-top: 25px;
   margin-bottom: 50px;
 
   @include tablet {
@@ -26,4 +27,8 @@
 .helium__list {
   display: flex;
   gap: 10px;
+}
+
+.gallery {
+  padding-bottom: 25px;
 }

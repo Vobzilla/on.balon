@@ -15,7 +15,7 @@
   height: 250px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px 0px var(--outline-color);
   transition: transform 0.3s ease;
 }
 
@@ -46,6 +46,7 @@
   text-decoration: none;
   padding: 10px 20px;
   border: 2px solid var(--outline-color);
+  box-shadow: 0 4px 8px var(--outline-color);
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }

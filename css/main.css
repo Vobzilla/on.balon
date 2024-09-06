@@ -382,7 +382,10 @@ body {
   font-weight: 700;
   font-size: 18px;
   transition-property: transform;
-  margin-bottom: 15px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 8px var(--outline-color);
+  border-radius: 6px;
 }
 @media screen and (min-width: 768px) {
   .topnav__item {
@@ -440,7 +443,11 @@ body {
   font-weight: 500;
 }
 
-/** @format */
+/**
+ * Соціальні іконки
+ *
+ * @format
+ */
 .nav__social {
   display: flex;
   gap: 6px;
@@ -450,10 +457,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .nav__social {
-    display: none;
+    display: none; /* Приховуємо соціальні іконки на планшетах */
   }
 }
 
+.topnav__link-mob {
+  color: white;
+  font-weight: 600;
+}
+
+/* Логотип для мобільної версії */
 .logo--mob {
   display: flex;
   justify-content: center;
@@ -461,19 +474,66 @@ body {
 }
 @media screen and (min-width: 768px) {
   .logo--mob {
-    display: none;
+    display: none; /* Логотип приховується на планшетах */
   }
 }
 
+.page-header__logo--mob {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+/* Мобільне меню */
+/* Мобільне меню з напівпрозорим фіолетовим фоном */
 .nav__mob {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 80%;
+  padding: 20px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  background-color: rgba(65, 26, 73, 0.9);
+  z-index: 999;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px var(--outline-color);
+  transition: opacity 0.5s ease, max-height 0.5s ease;
 }
 @media screen and (min-width: 768px) {
   .nav__mob {
-    display: none;
+    display: none; /* Приховано на планшетах */
   }
+}
+
+/* Показати меню, коли активне */
+.nav__mob--active {
+  display: block;
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Бургер-іконка */
+.burger-icon {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px; /* Відступ зверху */
+  left: 20px; /* Відступ справа */
+  z-index: 1001; /* Вищий індекс, щоб бути поверх меню */
+}
+@media screen and (min-width: 768px) {
+  .burger-icon {
+    display: none; /* Приховуємо на планшетах і більших екранах */
+  }
+}
+
+/* Анімація бургер-іконки */
+.burger-icon img {
+  width: 30px;
+  height: 30px;
 }
 
 /** @format */
@@ -500,6 +560,7 @@ body {
   text-align: center;
   justify-content: center;
   font-size: 25px;
+  margin-top: 25px;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
@@ -512,6 +573,10 @@ body {
 .helium__list {
   display: flex;
   gap: 10px;
+}
+
+.gallery {
+  padding-bottom: 25px;
 }
 
 /** @format */
@@ -560,6 +625,12 @@ body {
     gap: 25px;
     flex-direction: row;
   }
+}
+
+.bear__list-item {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--outline-color);
 }
 
 .bear__list-text {
@@ -649,7 +720,7 @@ body {
 
 /** @format */
 .price {
-  padding-top: 50px;
+  padding-top: 35px;
   padding-bottom: 50px;
 }
 
@@ -695,7 +766,7 @@ body {
   height: 250px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 8px 0px var(--outline-color);
   transition: transform 0.3s ease;
 }
 
@@ -724,6 +795,7 @@ body {
   text-decoration: none;
   padding: 10px 20px;
   border: 2px solid var(--outline-color);
+  box-shadow: 0 4px 8px var(--outline-color);
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
