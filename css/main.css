@@ -329,33 +329,6 @@ body {
   margin: -1px;
 }
 
-.swiper {
-  width: 100%;
-  height: 360px;
-}
-@media screen and (min-width: 768px) {
-  .swiper {
-    width: 760px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .swiper {
-    width: 1200px;
-    height: 450px;
-  }
-}
-
-.swiper__img {
-  width: 100%;
-  height: 360px;
-  border-radius: 10px;
-}
-@media screen and (min-width: 768px) {
-  .swiper__img {
-    height: 450px;
-  }
-}
-
 /** @format */
 .page-header .conteiner {
   display: none;
@@ -503,18 +476,6 @@ body {
   }
 }
 
-.car__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.car-js {
-  --animate-delay: 3s;
-  --animate-duration: 5s;
-}
-
 /** @format */
 .hero__title {
   text-align: center;
@@ -604,6 +565,7 @@ body {
 .bear__list-text {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   padding: 10px;
   outline: 2px solid var(--outline-color);
@@ -795,4 +757,68 @@ body {
 .scroll-to-top:hover .balloon-icon {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+}
+
+/** @format */
+/* Основні стилі для сторінки 'Про нас' */
+.page-about-us {
+  color: var(--primery-text-color);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Заголовок сторінки */
+.page-about-us h1 {
+  color: var(--primery-text-color);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Підзаголовки для секцій */
+.page-about-us h2 {
+  color: var(--primery-text-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Описовий текст */
+.page-about-us p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Контейнер для тексту та зображень */
+.page-about-us .content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Стилі для зображень */
+.page-about-us img {
+  width: 100%; /* Заповнює контейнер, але контейнер має максимальну ширину */
+  height: auto; /* Зберігає пропорції зображення */
+  max-width: 500px; /* Максимальна ширина зображення */
+  border-radius: 8px; /* Округлі краї для візуальної привабливості */
+  box-shadow: 0 4px 8px var(--outline-color); /* Тінь для виразності */
+  margin: 10px auto; /* Центрування зображення і відступи */
+}
+
+/* Блок для зображення команди або продуктів */
+.page-about-us .image-section {
+  text-align: center; /* Центрує зображення всередині контейнера */
+  padding: 20px; /* Відступи всередині контейнера */
+}
+
+/* Стилі для карт */
+.map-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px; /* Призначте висоту згідно з вашими потребами */
+  margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */

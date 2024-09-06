@@ -30,15 +30,3 @@
     display: none;
   }
 }
-
-.car__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.car-js {
-  --animate-delay: 3s;
-  --animate-duration: 5s;
-}
