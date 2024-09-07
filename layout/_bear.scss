@@ -21,14 +21,19 @@
     flex-direction: row;
   }
 }
-
+.bear__list-item {
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--outline-color);
+}
 .bear__list-text {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
   padding: 10px;
 
-  outline: 2px solid rgb(197, 139, 241);
+  outline: 2px solid var(--outline-color);
   border-radius: 10px;
 }
 
@@ -41,14 +46,16 @@
 
 .bear__img {
   border-radius: 10px;
-  width: 320px;
+  width: 300px;
+  max-height: 360px;
+  object-fit: cover;
 
   @include tablet {
     max-height: 320px;
   }
 
   @include desktop {
-    width: 450px;
-    max-height: 520px;
+    width: 337, 5px;
+    max-height: 390px;
   }
 }

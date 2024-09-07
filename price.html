@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Balony z helem Szczecin! On.balon - Profesjonalne dekoracje z balonów. Biały miś na twoją uroczystość. Dostawa balonów z helem, figur z balonów oraz decracje balonowe!">
-    <title>on.balon - balony z helem szczecin | Biały miś na twoją uroczystość</title>
+    <title>on.balon - price</title>
     <link rel="shortcut icon" type="image/x-icon" href="./img/fav.png">
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
                 <a href="tel:732977561" class="auth-nav__link--tell"><img width="35" src="./img/social/icon_phone.png"
                         alt="smartphone"> 732-977-561 </a>
                 <a href="index.html" class="logo-link"><img class="page-header__logo" src="./img/logo.png" alt="logo"
-                        width="400"></a>
+                        width="300"></a>
 
                 <ul class="auth-nav">
                     <li class="auth-nav__item"><a class="auth-nav__link" href="https://t.me/onbalon"><img
@@ -46,12 +46,10 @@
             </div>
 
             <ul class="top-nav">
-                <li class="topnav__item"><a href="index.html#helium" class="topnav__link">Balony z helem</a></li>
-                <li class="topnav__item"><a href="index.html#decorations" class="topnav__link">Dekoracje balonowe</a>
-                </li>
-                <li class="topnav__item"><a href="index.html#figures" class="topnav__link">Figury z balonów</a></li>
-                <li class="topnav__item"><a href="index.html#bear" class="topnav__link">Biały Miś</a></li>
-                <li class="topnav__item"><a href="price.html" class="topnav__link">Cennik</a></li>
+                <li class="topnav__item"><a href="index.html" class="topnav__link">Home</a></li>
+                <li class="topnav__item"><a href="helium-gallery.html" class="topnav__link">Balony z helem</a></li>
+                <li class="topnav__item"><a href="dekoracje.html" class="topnav__link">Dekoracje balonowe</a></li>
+                <li class="topnav__item"><a href="about.html" class="topnav__link">O nas</a></li>
             </ul>
 
 
@@ -59,24 +57,6 @@
         </div>
 
         <!-- Mob menu -->
-        <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </div>
-            <nav class="nav" id="nav">
-                <ul>
-                    <li><a href="index.html#helium">Balony z helem</a></li>
-                    <li><a href="index.html#decorations">Dekoracje balonowe</a></li>
-                    <li><a href="index.html#figures">Figury z balonów</a></li>
-                    <li><a href="index.html#bear">Biały Miś</a></li>
-                    <li><a href="price.html" class="topnav__link">Cennik</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="menu-bg" id="menu-bg"></div>
 
         <div class="nav__social">
             <a href="https://t.me/onbalon"><img src="./img/social/icon_telegram.png" alt="telegram" width="30"></a>
@@ -88,6 +68,19 @@
         </div>
         <div class="logo--mob"><a href="index.html" class="logo-link--mob"><img class="page-header__logo--mob"
                     src="./img/logo.png" alt="logo" width="200"></a></div>
+
+        <!-- Бургер-іконка -->
+        <button class="burger-icon" id="burger-icon" aria-label="Toggle menu">
+            <img src="./img/burger-icon.svg" alt="Open Menu" id="burger-icon-img">
+        </button>
+        <div class="nav__mob" id="nav-mob">
+            <ul class="nav__mob-list">
+                <li class="topnav__item"><a href="helium-gallery.html" class="topnav__link-mob">Balony z helem</a></li>
+                <li class="topnav__item"><a href="dekoracje.html" class="topnav__link-mob">Dekoracje balonowe</a></li>
+                <li class="topnav__item"><a href="price.html" class="topnav__link-mob">Cennik</a></li>
+                <li class="topnav__item"><a href="about.html" class="topnav__link-mob">O nas</a></li>
+            </ul>
+        </div>
     </header>
 
 
@@ -183,11 +176,18 @@
                 <li class="footer__social-item"><a class="footer__social-link" href="tel:732977561"><img width="30"
                             src="./img/social/icon_phone.png" alt="smartphone"> 732-977-561</a></li>
             </ul>
-            <p class="footer__item">SZCZECIN</p>
+            <a href="https://maps.app.goo.gl/4uJZGwS4F3aTVcxX7">
+                <p class="footer__item">ul. Księdza Hugona Kołłątaja 14/U2, 71-525, SZCZECIN</p>
+            </a>
         </div>
 
     </footer>
-    <script src="./menu.js"></script>
+    <button id="scrollToTopBtn" title="Do góry" class="scroll-to-top">
+        <img src="./img/up.svg" alt="Icon of balloon" class="balloon-icon">
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

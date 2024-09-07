@@ -21,10 +21,9 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
 </head>
 
 <body>
@@ -47,212 +46,135 @@
             </div>
 
             <ul class="top-nav">
-                <li class="topnav__item"><a href="#helium" class="topnav__link">Balony z helem</a></li>
-                <li class="topnav__item"><a href="#decorations" class="topnav__link">Dekoracje balonowe</a></li>
-                <li class="topnav__item"><a href="#figures" class="topnav__link">Figury z balonów</a></li>
-                <li class="topnav__item"><a href="#bear" class="topnav__link">Biały Miś</a></li>
+                <li class="topnav__item"><a href="helium-gallery.html" class="topnav__link">Balony z helem</a></li>
+                <li class="topnav__item"><a href="dekoracje.html" class="topnav__link">Dekoracje balonowe</a></li>
                 <li class="topnav__item"><a href="price.html" class="topnav__link">Cennik</a></li>
+                <li class="topnav__item"><a href="about.html" class="topnav__link">O nas</a></li>
+
             </ul>
-
-
+        </div>
 
         </div>
 
         <!-- Mob menu -->
-        <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-                <div id="bar1" class="bar"></div>
-                <div id="bar2" class="bar"></div>
-                <div id="bar3" class="bar"></div>
-            </div>
-            <nav class="nav" id="nav">
-                <ul>
-                    <li><a href="index.html">Balony z helem</a></li>
-                    <li><a href="#decorations">Dekoracje balonowe</a></li>
-                    <li><a href="#figures">Figury z balonów</a></li>
-                    <li><a href="#bear">Biały Miś</a></li>
-                    <li><a href="price.html" class="topnav__link">Cennik</a></li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="menu-bg" id="menu-bg"></div>
 
         <div class="nav__social">
             <a href="https://t.me/onbalon"><img src="./img/social/icon_telegram.png" alt="telegram" width="30"></a>
             <a href="tel:732977561"><img width="30" src="./img/social/icon_phone.png" alt="smartphone"></a>
-            <a href="https://www.facebook.com/on.balon"><img src="./img/social//icon_facebook.png" alt="facebook"
+            <a href="https://www.facebook.com/on.balon"><img src="./img/social/icon_facebook.png" alt="facebook"
                     width="30"></a>
             <a href="https://www.instagram.com/on.balon"><img width="30" src="./img/social/icon_insta.png"
                     alt="instagram"></a>
         </div>
         <div class="logo--mob"><a href="index.html" class="logo-link--mob"><img class="page-header__logo--mob"
-                    src="./img/logo.png" alt="logo" width="200"></a></div>
+                    src="./img/logo.png" alt="logo" width="200"></a>
+        </div>
+        <!-- Бургер-іконка -->
+        <button class="burger-icon" id="burger-icon" aria-label="Toggle menu">
+            <img src="./img/burger-icon.svg" alt="Open Menu" id="burger-icon-img">
+        </button>
+        <div class="nav__mob" id="nav-mob">
+            <ul class="nav__mob-list">
+                <li class="topnav__item"><a href="helium-gallery.html" class="topnav__link-mob">Balony z helem</a></li>
+                <li class="topnav__item"><a href="dekoracje.html" class="topnav__link-mob">Dekoracje balonowe</a></li>
+                <li class="topnav__item"><a href="price.html" class="topnav__link-mob">Cennik</a></li>
+                <li class="topnav__item"><a href="about.html" class="topnav__link-mob">O nas</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <section class="hero conteiner">
         <h1 class="hero__title visually-hidden ">On.balon - Profesjonalne dekoracje z balonów. Szczecin.</h1>
     </section>
 
-    <div class="car__wrap conteiner">
-        <svg class="car-js animate__animated animate__shakeX animate__repeat-3" width="30px" height="30px">
-            <use href="./img/icon-cars.svg#icon-car"></use>
-        </svg>
-        <h2 class="helium__title helium__title--first title">Dowozimy balony 24/7 na terenie Szczecina</h2>
+    <div class="conteiner">
+        <h2 class="helium__title--first title">Dowozimy balony 24/7 na terenie Szczecina</h2>
     </div>
 
     <section class="helium conteiner">
-        <h2 class="helium__title title" id="#helium">Balony z helem</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/1.jpg" alt="osiem" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/2.jpg" alt="24" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/3.jpg" alt="paw-patrul" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/hel/4.jpg" alt="paw-sky" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/5.jpg" alt="baby"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/6.jpg" alt="zestaw-hel-22"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/7.jpg" alt="zestaw-hel-1"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/8.jpg" alt="zestaw-hel-1"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/9.jpg" alt="boy-or-girl"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/10.jpg"
-                        alt="zestaw-hel-30" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/hel/11.jpg" alt="zestaw-hel-2"
-                        height="360">
-                </div>
+        <h2 class="helium__title title">Balony z helem</h2>
+        <div class="gallery">
+            <div class="gallery-container">
+                <a href="./img/hel/18-ka/balony-18-lat-różowe-zloto.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/18-ka/balony-18-lat-różowe-zloto.webp"
+                        alt="Balony z helem w kolorze różowego złota z cyfrą 18">
+                </a>
+                <a href="./img/hel/children/sky-10szt.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/children/sky-10szt.webp"
+                        alt="balon w kształcie Sky z „Psi Patrolu” oraz zestaw 10 balonów w odcieniach różu i srebrnym kolorze">
+                </a>
+                <a href="./img/hel/children/cyfra-3.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/children/cyfra-3.webp"
+                        alt="różowa cyfra 3, balon w kształcie fioletowego konika morskiego oraz zestaw balonów w różowo-fioletowych odcieniach">
+                </a>
+                <a href="./img/hel/children/pikachu.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="helium-gallery.html">
+                    <img src="./img/hel/children/pikachu.webp"
+                        alt="niebieska cyfra 4, balon w kształcie Pikachu, zestaw z niebieską gwiazdą, balonami z konfetti, żółtym i niebieskim balonem">
+                </a>
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <a href="helium-gallery.html" class="view-all">zobaczyc więcej</a>
         </div>
     </section>
 
-    <section class="decorations conteiner">
-        <h2 class="decorations__title title" id="decorations">Dekoracje balonowe</h2>
-
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/1.jpg" alt="HappyBirthday50"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/2.jpg" alt="HappyBirthdayKing"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/3.jpg" alt="chrzestSW" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/deko/4.jpg" alt="HappyBirthday"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/deko/5.jpg"
-                        alt="HappyBirthdayMia" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/deko/6.jpg"
-                        alt="HappyBirthdayDaniel" height="360">
-                </div>
+    <section class="conteiner">
+        <h2 class="helium__title title">Dekoracje balonowe</h2>
+        <div class="gallery">
+            <div class="gallery-container">
+                <a href="./img/deko/18-ka/deko-18-fioletowy-biały.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="dekoracje.html">
+                    <img src="./img/deko/18-ka/deko-18-fioletowy-biały.webp"
+                        alt="dekoracja podświetlana cyfra 18 z kompozycją fioletowych i białych balonów oraz napisem 'Happy Birthday' na tle z balonów">
+                </a>
+                <a href="./img/deko/chrzest/dekoracj-komunia–złoto-biała.webp" class="gallery-item"
+                    data-fancybox="gallery1" data-redirect="dekoracje.html">
+                    <img src="./img/deko/chrzest/dekoracj-komunia–złoto-biała.webp"
+                        alt="elegancka balonowa dekoracja w kolorach złotym i białym na komunię">
+                </a>
+                <a href="./img/deko/18-ka/deko-18-złoty-biały.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="dekoracje.html">
+                    <img src="./img/deko/18-ka/deko-18-złoty-biały.webp"
+                        alt="podświetlana cyfra 18 otoczona dużą girlandą złotych i białych balonów oraz napisem 'Happy Birthday'">
+                </a>
+                <a href="./img/deko/18-ka/deko-18-minionki.webp" class="gallery-item" data-fancybox="gallery1"
+                    data-redirect="dekoracje.html">
+                    <img src="./img/deko/18-ka/deko-18-minionki.webp" alt="pdekoracja balonowa w stylu minionków">
+                </a>
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-
-    </section>
-
-    <section class="figures conteiner">
-
-        <h2 class="figures__title title" id="figures">Figury z balonów</h2>
-
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/1.jpg" alt="paw-sky" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/2.jpg" alt="renifer" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/3.jpg" alt="królik" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img" src="./img/figury/4.jpg" alt="teddy" height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/5.jpg" alt="mikki"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/6.jpg" alt="peppa"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/7.jpg" alt="bałwan"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/8.jpg" alt="kwiaty"
-                        height="360">
-                </div>
-                <div class="swiper-slide"><img class="swiper__img swiper-lazy" src="./img/figury/9.jpg" alt="jojo"
-                        height="360">
-                </div>
-
-            </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev swiper-button--color"></div>
-            <div class="swiper-button-next"></div>
+            <a href="dekoracje.html" class="view-all">zobaczyc więcej</a>
         </div>
     </section>
 
     <section class="bear conteiner">
-        <h2 class="bear__title title" id="bear">Biały Miś na Twoją uroczystość</h2>
+        <h2 class="bear__title title">Biały Miś na Twoją imprezę!</h2>
         <ul class="bear__list-img">
-            <li><img class="bear__img" src="./img/bear/bear1.jpg" alt="Miś"></li>
-            <li><img class="bear__img" src="./img/bear/bear2.jpg" alt="Miś"></li>
-            <li><img class="bear__img" src="./img/bear/bear3.jpeg" alt="Miś"></li>
+            <li class="bear__list-item"><img class="bear__img" src="./img/bear/bear1.webp" alt="Miś"></li>
+            <li class="bear__list-item"><img class="bear__img" src="./img/bear/bear2.webp" alt="Miś"></li>
+            <li class="bear__list-item"><img class="bear__img" src="./img/bear/bear3.webp" alt="Miś"></li>
         </ul>
         <ul class="bear__list-text">
             <li>
-                <p class="bear__text">Oferujemy państwu Białego Misia - jest to pneumo-maskotka o wysokości 2,6 metra,
-                    który będzie oryginalnym gościem na
-                    Państwa weselu, urodzinach, komunii, jakiejkolwiek imprezie!🤩</p>
+                <p class="bear__text">Wynajmij Białego Misia (2,6 m) – oryginalnego gościa na wesela, urodziny, komunie
+                    i inne wyjątkowe wydarzenia.</p>
             </li>
             <li>
-                <p class="bear__text">Chcesz kogoś zaskoczyć, albo zrobić wyjątkowy prezent, zapraszamy do nas!</p>
+                <p class="bear__text">Miś może wręczać balony 🎈, prezenty 🎁 i bawić się z gośćmi – idealny do zdjęć i
+                    zabawy!</p>
             </li>
             <li>
-                <p class="bear__text">Niedźwiedź przywita Cię w Walentynki lub w Twoje urodziny, 8 marca lub rocznicy
-                    znajomości lub ślubu!💐</p>
+                <p class="bear__text">Dostępny również Różowy Miś i Panda – wybierz swojego ulubionego!</p>
             </li>
             <li>
-                <p class="bear__text">Niedźwiedź może podarować balony, prezent🎁🎈
-                    Z naszym misiem można robić zdjęcia, śpiewać, tańczyć, przytulać się❤️
+                <p class="bear__text">Atrakcja trwa 15 minut.
                 </p>
             </li>
             <li>
-                <p class="bear__text">Wszyscy są zachwyceni naszym Misiem - dorośli, dzieci, a nawet surowi szefowie🥸
+                <p class="bear__text">Zamów już dziś !
                 </p>
-            </li>
-            <li>
-                <p class="bear__text">Możesz również zaprosić Misia na uroczystą imprezę - na przykład do restauracji,
-                    niech wszyscy goście będą świadkami
-                    Twojego niezwykłego prezentu!😍</p>
-            </li>
-            <li>
-                <p class="bear__text">Czas atrakcji: 15-20min⏳</p>
             </li>
         </ul>
     </section>
@@ -275,19 +197,20 @@
                 <li class="footer__social-item"><a class="footer__social-link" href="tel:732977561"><img width="30"
                             src="./img/social/icon_phone.png" alt="smartphone"> 732-977-561</a></li>
             </ul>
-            <p class="footer__item">SZCZECIN</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.1367618153527!2d14.547662277002093!3d53.4481414671017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45300c9a213f3a39%3A0x2065c9d7ed92896c!2sOn.balon%20-%20dekoracje%20balonowe%2C%20balony%20z%20helem!5e0!3m2!1suk!2spl!4v1695888530485!5m2!1suk!2spl"
-                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a href="https://maps.app.goo.gl/4uJZGwS4F3aTVcxX7">
+                <p class="footer__item">ul. Księdza Hugona Kołłątaja 14/U2, 71-525, SZCZECIN</p>
+            </a>
         </div>
-
     </footer>
 
+    <button id="scrollToTopBtn" title="Do góry" class="scroll-to-top">
+        <img src="./img/up.svg" alt="Icon of balloon" class="balloon-icon">
+    </button>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./index.js"></script>
-    <script src="./menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>

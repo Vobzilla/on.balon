@@ -1,20 +1,9 @@
 /** @format */
 
-.car__wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-}
-
-.car-js {
-  --animate-delay: 3s;
-  --animate-duration: 5s;
-}
-
 .helium__title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 35px;
+  margin-bottom: 35px;
   font-size: 35px;
   @include tablet {
     font-size: 35px;
@@ -27,6 +16,7 @@
   text-align: center;
   justify-content: center;
   font-size: 25px;
+  margin-top: 25px;
   margin-bottom: 50px;
 
   @include tablet {
@@ -37,4 +27,8 @@
 .helium__list {
   display: flex;
   gap: 10px;
+}
+
+.gallery {
+  padding-bottom: 25px;
 }

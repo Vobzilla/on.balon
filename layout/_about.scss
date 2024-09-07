@@ -1,0 +1,64 @@
+/** @format */
+
+/* Основні стилі для сторінки 'Про нас' */
+.page-about-us {
+  color: var(--primery-text-color);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Заголовок сторінки */
+.page-about-us h1 {
+  color: var(--primery-text-color);
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Підзаголовки для секцій */
+.page-about-us h2 {
+  color: var(--primery-text-color);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Описовий текст */
+.page-about-us p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* Контейнер для тексту та зображень */
+.page-about-us .content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Стилі для зображень */
+.page-about-us img {
+  width: 100%; /* Заповнює контейнер, але контейнер має максимальну ширину */
+  height: auto; /* Зберігає пропорції зображення */
+  max-width: 500px; /* Максимальна ширина зображення */
+  border-radius: 8px; /* Округлі краї для візуальної привабливості */
+  box-shadow: 0 4px 8px var(--outline-color); /* Тінь для виразності */
+  margin: 10px auto; /* Центрування зображення і відступи */
+}
+
+/* Блок для зображення команди або продуктів */
+.page-about-us .image-section {
+  text-align: center; /* Центрує зображення всередині контейнера */
+  padding: 20px; /* Відступи всередині контейнера */
+}
+
+/* Стилі для карт */
+.map-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 250px; /* Призначте висоту згідно з вашими потребами */
+  margin-top: 40px;
+}
