@@ -464,6 +464,7 @@ body {
 .topnav__link-mob {
   color: white;
   font-weight: 600;
+  padding: 0 40px;
 }
 
 /* Логотип для мобільної версії */
@@ -808,7 +809,7 @@ body {
 /** @format */
 .scroll-to-top {
   position: fixed;
-  bottom: 30px;
+  bottom: 90px;
   right: 5px;
   z-index: 99;
   border: none;
